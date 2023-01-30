@@ -127,6 +127,17 @@ git subtree push --prefix=dist/<project name> <repository link> master
 git subtree push --prefix=dist/oops-lib001 https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist master
 
 
+- Error:
+
+$ git subtree push --prefix=dist/oops-lib001 https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist master
+git push using:  https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist master
+No new revisions were found
+
+So, need to push into "001-oopsmails-angular-lib-test" first, note, in .gitignore file, dist should NOT be ignored.
+
+After pushing in "001-oopsmails-angular-lib-test", "git subtree push" is fine ... the command is pushing into "master" branch instead of "main" branch ... change it if needed.
+
+
 - My lib dist: https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist --> distribution git repo, similar to local .tgz file.
 - My lib: https://github.com/oopsmails/001-oopsmails-angular-lib-test --> this is the project contains lib project, used for lib project development. More, can update distribution repo by using "git subtree ...."
 - Main project: https://github.com/oopsmails/angular-shared-lib-test --> might no needed because can use other project to test.
@@ -138,11 +149,24 @@ git subtree push --prefix=dist/oops-lib001 https://github.com/oopsmails/001-oops
 - Now let's move back to the main project, where the package will be used. First you must add the library as a package in the 'package.json' file.
 
 ```
-"my-lib": "git+https://github.com/oopsmails/angular-shared-components",
+"my-lib": "git+https://github.com/oopsmails/dist----",
+
+"001-oopsmails-angular-lib-test": "https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist",
 
 Note: You can also add “git+ssh://git@github.com:Madz96/library-distribution.git” instead.
 ```
 
 - Install the packages using 'npm install'. Then import the library module through the 'app.module.ts' file.
+
+```
+Error: compatiablity ...
+
+angular 10 app using lib created using angular 14?
+
+npm install <library-name> --force
+
+npm install 001-oopsmails-angular-lib-test --force
+
+```
 
 - Now you can use the components from the shared library by importing them to the component they need to be used in, and use their selectors in the required html page. (In this case, 'app.component.ts' & 'app.component.html').
