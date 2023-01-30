@@ -58,6 +58,7 @@ npm i --save rxjs@6.0.0
 
 ```
 ng new <app name> --skip-install --directory <directory you need the app to generate>
+
 ```
 
 ### Next, create the project which contains the library (in this case, library-project). Libraries can be generated using the following command
@@ -66,6 +67,8 @@ ng new <app name> --skip-install --directory <directory you need the app to gene
 ng generate library <library name> --prefix <selector prefix>
 
 ng generate library my-lib --prefix ml
+
+ng g library oops-lib001 --prefix oopslib001
 ```
 
 Note: — prefix allows you to change the selector prefix of the library components.
@@ -99,6 +102,17 @@ You can build a library using the following command. (Note: Make sure that you r
 ng build <project name>
 
 ng build my-lib
+
+ng build oops-lib001
+
+ERROR: Unknown import type?
+An unhandled exception occurred: Unknown import type?
+
+- This error, might due to already ran "npm i" under the library .... should NOT, need to "rm -rf node_modules/ package-lock.json" under the lib folder ... and then try "ng build oops-lib001" again.
+
+
+Also, may want to put .tgz file in dist/oops-lib001 .... then go to "/c/oopsmails/001-oopsmails-angular-lib-test/dist/oops-lib001" and run "npm pack", this will generate "oops-lib001-0.0.1.tgz" there.
+
 ```
 
 - push to git
@@ -110,7 +124,7 @@ Once the library is build, commit the changes and push using the following comma
 ```
 git subtree push --prefix=dist/<project name> <repository link> master
 
-git subtree push --prefix=dist/oops-lib https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist master
+git subtree push --prefix=dist/oops-lib001 https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist master
 
 
 - My lib dist: https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist --> distribution git repo, similar to local .tgz file.

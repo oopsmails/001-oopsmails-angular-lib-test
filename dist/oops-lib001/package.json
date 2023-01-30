@@ -1,0 +1,22 @@
+{
+  "name": "oops-lib001",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^14.0.4",
+    "@angular/core": "^14.0.4",
+    "@types/lodash": "^4.14.191"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "main": "bundles/oops-lib001.umd.js",
+  "module": "fesm2015/oops-lib001.js",
+  "es2015": "fesm2015/oops-lib001.js",
+  "esm2015": "esm2015/oops-lib001.js",
+  "fesm2015": "fesm2015/oops-lib001.js",
+  "typings": "oops-lib001.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}
