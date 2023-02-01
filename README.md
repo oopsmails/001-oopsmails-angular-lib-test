@@ -200,10 +200,28 @@ ng build oops-lib002
 https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git
 
 
-git subtree push --prefix=dist/oops-lib002 https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git main
+git subtree push --prefix=dist/oops-lib002 https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git master
+
+- Note 1:
 
 So, need to push into "001-oopsmails-angular-lib-test" first, note, in .gitignore file, dist should NOT be ignored.
 
 After pushing in "001-oopsmails-angular-lib-test", "git subtree push" is fine ... the command is pushing into "master" branch instead of "main" branch ... change it if needed.
+
+- Note 2: error,
+
+liu@lenovo-small MINGW64 /c/oopsmails/001-oopsmails-angular-lib-test (20230202-TestAddingLib02)
+$ git subtree push --prefix=dist/oops-lib002 https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git main
+git push using:  https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git main
+To https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git
+ ! [rejected]        db880ca3d86b5ddf7a9dd998b60c562de1881fc6 -> main (fetch first)
+error: failed to push some refs to 'https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details
+
+Should use "master" branch directly, would be fine ... as there is no "master" branch yet. If using "main", then need to check out/pull first ....
 
 ```
