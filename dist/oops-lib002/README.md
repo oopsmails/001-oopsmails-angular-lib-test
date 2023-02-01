@@ -1,24 +1,29 @@
 # OopsLib002
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+This library is a Shared Lib.
 
-## Code scaffolding
+```
+export * from './lib/oops-lib002.service';
+export * from './lib/oops-lib002.component';
+export * from './lib/oops-lib002.module';
+export * from './lib/shared/pipes/highlighter.pipe';
+export * from './lib/shared/pipes/highlight.html.pipe';
+export * from './lib/shared/components/not-found/not-found.component';
+export * from './lib/shared/components/nav-bar/nav-bar.component';
+export * from './lib/shared/components/back-angle/back.angle.component';
+export * from './lib/shared/components/footer/footer.component';
+export * from './lib/shared/directives/element-changing.directive';
+export * from './lib/shared/directives/mouseover-color.directive';
+export * from './lib/shared/services/car.service';
+export * from './lib/shared/services/card.service';
+export * from './lib/shared/services/github.service';
+export * from './lib/shared/services/shared.data.service';
+export * from './lib/shared/services/state.service';
+export * from './lib/shared/services/utils.service';
+export * from './lib/shared/services/wikipedia.service';
+export * from './lib/shared/shared.module';
+export * from './lib/shared/models/index';
+export * from './lib/shared/validators/generic-validator';
+//# sourceMappingURL=public-api.d.ts.map
 
-Run `ng generate component component-name --project oops-lib002` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project oops-lib002`.
-> Note: Don't forget to add `--project oops-lib002` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build oops-lib002` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build oops-lib002`, go to the dist folder `cd dist/oops-lib002` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test oops-lib002` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```

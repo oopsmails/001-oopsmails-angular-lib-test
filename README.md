@@ -197,4 +197,13 @@ ng build oops-lib002
     ... ...
   ],
 
+https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git
+
+
+git subtree push --prefix=dist/oops-lib002 https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git main
+
+So, need to push into "001-oopsmails-angular-lib-test" first, note, in .gitignore file, dist should NOT be ignored.
+
+After pushing in "001-oopsmails-angular-lib-test", "git subtree push" is fine ... the command is pushing into "master" branch instead of "main" branch ... change it if needed.
+
 ```
