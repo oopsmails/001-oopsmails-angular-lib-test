@@ -8,6 +8,7 @@ import { OopsLib001Module } from 'oops-lib001';
 import { OopsLib002Module, SharedModule } from 'oops-lib002';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HelloComponent } from './components/hello.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { AppComponent } from './app.component';
     SharedModule,
     AppRoutingModule,
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
   // providers: [OopsLib001Service], // not needed because it is already declared in OopsLib001Module
 })
