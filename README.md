@@ -153,7 +153,9 @@ After pushing in "001-oopsmails-angular-lib-test", "git subtree push" is fine ..
 
 "001-oopsmails-angular-lib-test": "https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist",
 
-Note: You can also add “git+ssh://git@github.com:Madz96/library-distribution.git” instead.
+Note: You can also add "git+ssh://git@github.com:Madz96/library-distribution.git" instead.
+
+if using as a local .tgz file, then "001-oopsmails-angular-lib-test": "file:dist/oops-lib001/oops-lib001-0.0.1.tgz",
 ```
 
 - Install the packages using 'npm install'. Then import the library module through the 'app.module.ts' file.

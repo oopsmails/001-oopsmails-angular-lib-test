@@ -1,15 +1,10 @@
 import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
-import { concat, clone } from 'lodash';
 import { CommonModule } from '@angular/common';
 
 class OopsLib001Service {
     constructor() { }
     doSomething() {
-        // Make sure tree shaking won't remove the lib during the build
-        console.log(concat([1], 2));
-        let myItem = { abc: 'lodash-clone-string' };
-        let clonedItem = clone(myItem);
-        console.log('Testing lib, clonedItem: ', clonedItem);
+        console.log('Testing lib, if you see this, then OopsLib001Service is working!');
     }
 }
 OopsLib001Service.ɵfac = function OopsLib001Service_Factory(t) { return new (t || OopsLib001Service)(); };
@@ -23,19 +18,21 @@ OopsLib001Service.ɵprov = ɵɵdefineInjectable({ token: OopsLib001Service, fact
 
 class OopsLib001Component {
     constructor() { }
-    ngOnInit() { }
+    ngOnInit() {
+        console.log('Testing lib, if you see this, then OopsLib001Component is working!');
+    }
 }
 OopsLib001Component.ɵfac = function OopsLib001Component_Factory(t) { return new (t || OopsLib001Component)(); };
 OopsLib001Component.ɵcmp = ɵɵdefineComponent({ type: OopsLib001Component, selectors: [["oopslib001-oops-lib001"]], decls: 2, vars: 0, template: function OopsLib001Component_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "p");
-        ɵɵtext(1, "angular-oops-shared-components test works!");
+        ɵɵtext(1, "oopslib001-oops-lib001 test works!!");
         ɵɵelementEnd();
     } }, encapsulation: 2 });
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OopsLib001Component, [{
         type: Component,
         args: [{
                 selector: 'oopslib001-oops-lib001',
-                template: ` <p>angular-oops-shared-components test works!</p> `,
+                template: ` <p>oopslib001-oops-lib001 test works!!</p> `,
                 styles: [],
             }]
     }], function () { return []; }, null); })();

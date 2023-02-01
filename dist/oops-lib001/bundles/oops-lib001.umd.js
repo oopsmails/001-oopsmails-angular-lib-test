@@ -1,18 +1,14 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('lodash'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('oops-lib001', ['exports', '@angular/core', 'lodash', '@angular/common'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['oops-lib001'] = {}, global.ng.core, global._, global.ng.common));
-}(this, (function (exports, i0, _, common) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('oops-lib001', ['exports', '@angular/core', '@angular/common'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['oops-lib001'] = {}, global.ng.core, global.ng.common));
+}(this, (function (exports, i0, common) { 'use strict';
 
     var OopsLib001Service = /** @class */ (function () {
         function OopsLib001Service() {
         }
         OopsLib001Service.prototype.doSomething = function () {
-            // Make sure tree shaking won't remove the lib during the build
-            console.log(_.concat([1], 2));
-            var myItem = { abc: 'lodash-clone-string' };
-            var clonedItem = _.clone(myItem);
-            console.log('Testing lib, clonedItem: ', clonedItem);
+            console.log('Testing lib, if you see this, then OopsLib001Service is working!');
         };
         return OopsLib001Service;
     }());
@@ -30,14 +26,16 @@
     var OopsLib001Component = /** @class */ (function () {
         function OopsLib001Component() {
         }
-        OopsLib001Component.prototype.ngOnInit = function () { };
+        OopsLib001Component.prototype.ngOnInit = function () {
+            console.log('Testing lib, if you see this, then OopsLib001Component is working!');
+        };
         return OopsLib001Component;
     }());
     OopsLib001Component.ɵfac = function OopsLib001Component_Factory(t) { return new (t || OopsLib001Component)(); };
     OopsLib001Component.ɵcmp = i0.ɵɵdefineComponent({ type: OopsLib001Component, selectors: [["oopslib001-oops-lib001"]], decls: 2, vars: 0, template: function OopsLib001Component_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "p");
-                i0.ɵɵtext(1, "angular-oops-shared-components test works!");
+                i0.ɵɵtext(1, "oopslib001-oops-lib001 test works!!");
                 i0.ɵɵelementEnd();
             }
         }, encapsulation: 2 });
@@ -46,7 +44,7 @@
                 type: i0.Component,
                 args: [{
                         selector: 'oopslib001-oops-lib001',
-                        template: " <p>angular-oops-shared-components test works!</p> ",
+                        template: " <p>oopslib001-oops-lib001 test works!!</p> ",
                         styles: [],
                     }]
             }], function () { return []; }, null);
