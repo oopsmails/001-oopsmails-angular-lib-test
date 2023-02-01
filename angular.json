@@ -145,6 +145,46 @@
           }
         }
       }
+    },
+    "oops-lib002": {
+      "projectType": "library",
+      "root": "projects/oops-lib002",
+      "sourceRoot": "projects/oops-lib002/src",
+      "prefix": "oopslib002",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/oops-lib002/tsconfig.lib.json",
+            "project": "projects/oops-lib002/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/oops-lib002/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/oops-lib002/src/test.ts",
+            "tsConfig": "projects/oops-lib002/tsconfig.spec.json",
+            "karmaConfig": "projects/oops-lib002/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/oops-lib002/tsconfig.lib.json",
+              "projects/oops-lib002/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "001-oopsmails-angular-lib-test",

@@ -1,0 +1,30 @@
+{
+  "name": "oops-lib002",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/animations": "^14.0.4",
+    "@angular/common": "^14.0.4",
+    "@angular/compiler": "^14.0.4",
+    "@angular/core": "^14.0.4",
+    "@angular/forms": "^14.0.4",
+    "@angular/platform-browser": "^14.0.4",
+    "@angular/platform-browser-dynamic": "^14.0.4",
+    "@angular/router": "^14.0.4",
+    "angular-oops-shared-components": "file:oops-lib/angular-oops-shared-components-0.0.1.tgz",
+    "rxjs": "~7.5.2",
+    "zone.js": "~0.11.4"
+  },
+  "main": "bundles/oops-lib002.umd.js",
+  "module": "fesm2015/oops-lib002.js",
+  "es2015": "fesm2015/oops-lib002.js",
+  "esm2015": "esm2015/oops-lib002.js",
+  "fesm2015": "fesm2015/oops-lib002.js",
+  "typings": "oops-lib002.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}

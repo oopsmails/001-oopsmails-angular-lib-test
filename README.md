@@ -69,6 +69,7 @@ ng generate library <library name> --prefix <selector prefix>
 ng generate library my-lib --prefix ml
 
 ng g library oops-lib001 --prefix oopslib001
+ng g library oops-lib002 --prefix oopslib002
 ```
 
 Note: — prefix allows you to change the selector prefix of the library components.
@@ -172,3 +173,12 @@ npm install 001-oopsmails-angular-lib-test --force
 ```
 
 - Now you can use the components from the shared library by importing them to the component they need to be used in, and use their selectors in the required html page. (In this case, 'app.component.ts' & 'app.component.html').
+
+## Build a new Lib
+
+```
+ng g library oops-lib002 --prefix oopslib002
+- change package.json if needed, e.g, add dependencies.
+ng build oops-lib002
+- check in
+```

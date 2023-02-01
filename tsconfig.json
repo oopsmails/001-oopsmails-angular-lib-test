@@ -21,6 +21,10 @@
       "oops-lib001": [
         "dist/oops-lib001/oops-lib001",
         "dist/oops-lib001"
+      ],
+      "oops-lib002": [
+        "dist/oops-lib002/oops-lib002",
+        "dist/oops-lib002"
       ]
     }
   }
