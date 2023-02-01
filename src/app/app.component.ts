@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { OopsLib001Service } from 'projects/oops-lib001/src/public-api';
+import { Router } from '@angular/router';
+import { OopsLib001Service } from 'oops-lib001';
 import { Subject } from 'rxjs';
 @Component({
   selector: 'app-root',
@@ -10,12 +11,15 @@ export class AppComponent implements OnInit, OnDestroy {
   private onDestroy$: Subject<boolean> = new Subject();
   projectDescription: String = 'Testing Angular Lib Sharing';
 
-  constructor(private oopsLib001Service: OopsLib001Service) {}
+  constructor(private router: Router, private oopsLib001Service: OopsLib001Service) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.oopsLib001Service.doSomething();
+  }
 
   navToPage(page) {
-    this.oopsLib001Service.doSomething();
+    console.log('HomeComponent, navToPage, page = ' + page);
+    this.router.navigateByUrl(page);
   }
 
   ngOnDestroy() {
