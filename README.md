@@ -179,6 +179,22 @@ npm install 001-oopsmails-angular-lib-test --force
 ```
 ng g library oops-lib002 --prefix oopslib002
 - change package.json if needed, e.g, add dependencies.
+- npm i --legacy-peer-deps, if needed.
 ng build oops-lib002
 - check in
+- add more Components, Directives, Pipes, Services ...
+- public-api.ts
+- test in outside project, add in package.json
+"oops-lib002": "file:dist/oops-lib002/oops-lib002-0.0.1.tgz"
+
+- in outside project, add in app.module.ts
+
+  imports: [
+    ... ...
+    OopsLib001Module,
+    OopsLib002Module,
+    SharedModule,
+    ... ...
+  ],
+
 ```

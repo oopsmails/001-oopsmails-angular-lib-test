@@ -1,1 +1,1 @@
-{"version":3,"file":"oops-lib002.service.d.ts","sourceRoot":"C:/oopsmails/001-oopsmails-angular-lib-test/projects/oops-lib002/src/","sources":["lib/oops-lib002.service.ts"],"names":[],"mappings":";AAEA,qBAGa,iBAAiB;;iCAAjB,iBAAiB;qCAAjB,iBAAiB;CAG7B"}
+{"version":3,"file":"oops-lib002.service.d.ts","sourceRoot":"C:/oopsmails/001-oopsmails-angular-lib-test/projects/oops-lib002/src/","sources":["lib/oops-lib002.service.ts"],"names":[],"mappings":";AAEA,qBAGa,iBAAiB;;IAE5B,WAAW;iCAFA,iBAAiB;qCAAjB,iBAAiB;CAK7B"}
