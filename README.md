@@ -224,4 +224,18 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details
 
 Should use "master" branch directly, would be fine ... as there is no "master" branch yet. If using "main", then need to check out/pull first ....
 
+
+- usage
+
+"oops-lib001": "github:oopsmails/001-oopsmails-angular-lib-test-dist",
+"oops-lib002": "github:/oopsmails/002-oopsmails-angular-lib-dist",
+
+or
+
+"001-oopsmails-angular-lib-test": "github:oopsmails/001-oopsmails-angular-lib-test-dist",
+"oops-lib002": "file:dist/oops-lib002/oops-lib002-0.0.1.tgz",
+
+
+npm i --legacy-peer-deps
+
 ```
