@@ -202,6 +202,9 @@ https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git
 
 git subtree push --prefix=dist/oops-lib002 https://github.com/oopsmails/002-oopsmails-angular-lib-dist.git master
 
+git subtree push --prefix=dist/oops-lib001 https://github.com/oopsmails/001-oopsmails-angular-lib-test-dist master-v10
+
+
 - Note 1:
 
 So, need to push into "001-oopsmails-angular-lib-test" first, note, in .gitignore file, dist should NOT be ignored.
@@ -229,6 +232,10 @@ Should use "master" branch directly, would be fine ... as there is no "master" b
 
 "oops-lib001": "github:oopsmails/001-oopsmails-angular-lib-test-dist",
 "oops-lib002": "github:oopsmails/002-oopsmails-angular-lib-dist",
+
+- different branches
+
+"oops-lib001": "github:oopsmails/001-oopsmails-angular-lib-test-dist#master-v10",
 
 or
 
