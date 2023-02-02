@@ -228,7 +228,7 @@ Should use "master" branch directly, would be fine ... as there is no "master" b
 - usage
 
 "oops-lib001": "github:oopsmails/001-oopsmails-angular-lib-test-dist",
-"oops-lib002": "github:/oopsmails/002-oopsmails-angular-lib-dist",
+"oops-lib002": "github:oopsmails/002-oopsmails-angular-lib-dist",
 
 or
 
