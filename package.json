@@ -31,7 +31,7 @@
     "@ngrx/store-devtools": "^10.0.0",
     "@ngx-translate/core": "^10.0.0",
     "@ngx-translate/http-loader": "^3.0.1",
-    "001-oopsmails-angular-lib-test": "github:oopsmails/001-oopsmails-angular-lib-test-dist",
+    "oops-lib001": "github:oopsmails/001-oopsmails-angular-lib-test-dist",
     "oops-lib002": "file:dist/oops-lib002/oops-lib002-0.0.1.tgz",
     "ngx-bootstrap": "^5.2.0",
     "rxjs": "~7.5.2",

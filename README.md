@@ -235,6 +235,7 @@ or
 "001-oopsmails-angular-lib-test": "github:oopsmails/001-oopsmails-angular-lib-test-dist",
 "oops-lib002": "file:dist/oops-lib002/oops-lib002-0.0.1.tgz",
 
+- Note, currently, in this prject, outside is using Angular v10, but libraries are using Angular v14. Of course, this will be change soon ... but, may need to use "--legacy-peer-deps" in other projects.
 
 npm i --legacy-peer-deps
 

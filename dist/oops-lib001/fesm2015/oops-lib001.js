@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 class OopsLib001Service {
     constructor() { }
     doSomething() {
-        console.log('Testing lib, if you see this, then OopsLib001Service is working!');
+        console.log('Testing lib, if you see this, then OopsLib001Service is working! Test branch!');
     }
 }
 OopsLib001Service.ɵfac = function OopsLib001Service_Factory(t) { return new (t || OopsLib001Service)(); };
@@ -25,14 +25,14 @@ class OopsLib001Component {
 OopsLib001Component.ɵfac = function OopsLib001Component_Factory(t) { return new (t || OopsLib001Component)(); };
 OopsLib001Component.ɵcmp = ɵɵdefineComponent({ type: OopsLib001Component, selectors: [["oopslib001-oops-lib001"]], decls: 2, vars: 0, template: function OopsLib001Component_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "p");
-        ɵɵtext(1, "oopslib001-oops-lib001 test works!!");
+        ɵɵtext(1, "oopslib001-oops-lib001 test works!");
         ɵɵelementEnd();
     } }, encapsulation: 2 });
 /*@__PURE__*/ (function () { ɵsetClassMetadata(OopsLib001Component, [{
         type: Component,
         args: [{
                 selector: 'oopslib001-oops-lib001',
-                template: ` <p>oopslib001-oops-lib001 test works!!</p> `,
+                template: ` <p>oopslib001-oops-lib001 test works!</p> `,
                 styles: [],
             }]
     }], function () { return []; }, null); })();

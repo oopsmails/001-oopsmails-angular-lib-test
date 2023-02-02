@@ -6,6 +6,6 @@ import { Injectable } from '@angular/core';
 export class OopsLib001Service {
   constructor() {}
   doSomething() {
-    console.log('Testing lib, if you see this, then OopsLib001Service is working!');
+    console.log('Testing lib, if you see this, then OopsLib001Service is working! Test branch!');
   }
 }

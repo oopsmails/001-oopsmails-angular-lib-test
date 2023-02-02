@@ -8,7 +8,7 @@
         function OopsLib001Service() {
         }
         OopsLib001Service.prototype.doSomething = function () {
-            console.log('Testing lib, if you see this, then OopsLib001Service is working!');
+            console.log('Testing lib, if you see this, then OopsLib001Service is working! Test branch!');
         };
         return OopsLib001Service;
     }());
@@ -35,7 +35,7 @@
     OopsLib001Component.ɵcmp = i0.ɵɵdefineComponent({ type: OopsLib001Component, selectors: [["oopslib001-oops-lib001"]], decls: 2, vars: 0, template: function OopsLib001Component_Template(rf, ctx) {
             if (rf & 1) {
                 i0.ɵɵelementStart(0, "p");
-                i0.ɵɵtext(1, "oopslib001-oops-lib001 test works!!");
+                i0.ɵɵtext(1, "oopslib001-oops-lib001 test works!");
                 i0.ɵɵelementEnd();
             }
         }, encapsulation: 2 });
@@ -44,7 +44,7 @@
                 type: i0.Component,
                 args: [{
                         selector: 'oopslib001-oops-lib001',
-                        template: " <p>oopslib001-oops-lib001 test works!!</p> ",
+                        template: " <p>oopslib001-oops-lib001 test works!</p> ",
                         styles: [],
                     }]
             }], function () { return []; }, null);
